@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(0, 45, 60);
+    ;
+}
+
+.menu {
+
+    background-color: rgb(52, 49, 45);
+    padding: 20px;
+    border-radius: 80px;
+ 
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    background-color: orange;
+ padding: 10px 10px;
+    border-radius: 40px;
+    position: relative;
+   
+   
+
+}
+.menu ul li{
+    position: relative;
+    cursor: pointer;
+   
+}
+
+.menu ul li .dropdown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top:100%;
+  right:0%;
+  background: orange;
+  padding: 20px 40px;
+  visibility: hidden;
+  
+  
+} 
+.menu ul li:hover .dropdown{
+    transition-delay: .3s;
+    transition-duration: 2s;
+  transition-timing-function: ease-out;
+  visibility: visible;
+}
+
+.menu ul li .dropdown li{
+    margin: 10px 0px;
+    background-color: gray;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+.menu ul li i {
+    margin: 0px 30px;
+    border: 2px solid black;
+  padding: 20px 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+
+.menu ul li .dropdown li{
+    position: relative;
+    
+}
+
+.menu ul li .dropdown-2{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 150%;
+    top:0%;
+    padding: 10px 40px;
+    display: none;
+   
+    
+}
+.menu ul li .dropdown li:hover .dropdown-2{
+    display: block;
+}
